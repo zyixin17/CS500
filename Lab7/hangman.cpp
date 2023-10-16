@@ -170,14 +170,12 @@ void EvilHangman::partitionWords(char guess) {
 std::string EvilHangman::determineBestFamily() const {
     size_t maxSize = 0;
     std::string bestPattern;
-
     for(const auto& pair : wordFamilies) {
         if(pair.second.size() > maxSize) {
             maxSize = pair.second.size();
             bestPattern = pair.first;
         }
     }
-
     return bestPattern;
 }
 
@@ -207,9 +205,9 @@ int main() {
 
         if(game.isGameFinished()) {
             if(game.playerWon()) {
-                std::cout << "You guessed the word: " << game.getCurrentWordState() << std::endl;
+                std::cout << "You guessed the word: " << game.getActualWord() << std::endl;
             } else {
-                std::cout << "Sorry, the word was: " << game.getActualWord() << std::endl;
+                std::cout << "You lost. The word was: " << game.getActualWord() << std::endl;
             }
             break;
         }
