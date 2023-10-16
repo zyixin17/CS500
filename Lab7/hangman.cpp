@@ -212,7 +212,7 @@ int main() {
             break;
         }
     }
-    game.displayBoard();
+    //game.displayBoard();
     std::cout << "Exit" << std::endl;
     return 0;
 }
