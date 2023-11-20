@@ -1,0 +1,132 @@
+\doxysection{Vigenere Class Reference}
+\hypertarget{class_vigenere}{}\label{class_vigenere}\index{Vigenere@{Vigenere}}
+
+
+Class for encrypting and decrypting messages using the Vigenère cipher.  
+
+
+
+
+{\ttfamily \#include $<$vigenere.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_vigenere_aa47ebd6550a2022e244278891cd57e47}{Vigenere}} (std\+::string key)
+\begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{class_vigenere}{Vigenere} cipher object with a given key. \end{DoxyCompactList}\item 
+\Hypertarget{class_vigenere_a63987a17306659d0ad5f19ac25b95018}\label{class_vigenere_a63987a17306659d0ad5f19ac25b95018} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Vigenere} ()
+\begin{DoxyCompactList}\small\item\em Destructor of \doxylink{class_vigenere}{Vigenere} cipher object. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_vigenere_af4c61150d58a7cf06c3e32e861f3f10f}{encrypt}} (std\+::string msg)
+\begin{DoxyCompactList}\small\item\em Encrypts a message using the Vigenère cipher. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_vigenere_a7b87aaf211ce478d05e262928db65cfc}{decrypt}} (std\+::string msg)
+\begin{DoxyCompactList}\small\item\em Decrypts a message using the Vigenère cipher. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_vigenere_aac5188f7f1fe95ffa0f8a9015d0f36e8}{is\+Encrypted}} (std\+::string en\+\_\+result, std\+::string de\+\_\+result)
+\begin{DoxyCompactList}\small\item\em Checks if a message is correctly encrypted and decrypted. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_vigenere_a56fc304a543d347924432c61bc9780a1}{set\+Key}} (std\+::string key)
+\begin{DoxyCompactList}\small\item\em Sets a new encryption key for the Vigenère cipher. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for encrypting and decrypting messages using the Vigenère cipher. 
+
+The Vigenère cipher is a method of encrypting alphabetic text by using a simple form of polyalphabetic substitution. A key is used for the encryption and decryption of messages. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_vigenere_aa47ebd6550a2022e244278891cd57e47}\label{class_vigenere_aa47ebd6550a2022e244278891cd57e47} 
+\index{Vigenere@{Vigenere}!Vigenere@{Vigenere}}
+\index{Vigenere@{Vigenere}!Vigenere@{Vigenere}}
+\doxysubsubsection{\texorpdfstring{Vigenere()}{Vigenere()}}
+{\footnotesize\ttfamily Vigenere\+::\+Vigenere (\begin{DoxyParamCaption}\item[{std\+::string}]{key }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \doxylink{class_vigenere}{Vigenere} cipher object with a given key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The encryption key as a string, assumed to be uppercase. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_vigenere_a7b87aaf211ce478d05e262928db65cfc}\label{class_vigenere_a7b87aaf211ce478d05e262928db65cfc} 
+\index{Vigenere@{Vigenere}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!Vigenere@{Vigenere}}
+\doxysubsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily std\+::string Vigenere\+::decrypt (\begin{DoxyParamCaption}\item[{std\+::string}]{msg }\end{DoxyParamCaption})}
+
+
+
+Decrypts a message using the Vigenère cipher. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & The encrypted message to be decrypted, assumed to be uppercase. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::string The decrypted message. 
+\end{DoxyReturn}
+\Hypertarget{class_vigenere_af4c61150d58a7cf06c3e32e861f3f10f}\label{class_vigenere_af4c61150d58a7cf06c3e32e861f3f10f} 
+\index{Vigenere@{Vigenere}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!Vigenere@{Vigenere}}
+\doxysubsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily std\+::string Vigenere\+::encrypt (\begin{DoxyParamCaption}\item[{std\+::string}]{msg }\end{DoxyParamCaption})}
+
+
+
+Encrypts a message using the Vigenère cipher. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & The message to be encrypted, assumed to be uppercase. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::string The encrypted message. 
+\end{DoxyReturn}
+\Hypertarget{class_vigenere_aac5188f7f1fe95ffa0f8a9015d0f36e8}\label{class_vigenere_aac5188f7f1fe95ffa0f8a9015d0f36e8} 
+\index{Vigenere@{Vigenere}!isEncrypted@{isEncrypted}}
+\index{isEncrypted@{isEncrypted}!Vigenere@{Vigenere}}
+\doxysubsubsection{\texorpdfstring{isEncrypted()}{isEncrypted()}}
+{\footnotesize\ttfamily bool Vigenere\+::is\+Encrypted (\begin{DoxyParamCaption}\item[{std\+::string}]{en\+\_\+result,  }\item[{std\+::string}]{de\+\_\+result }\end{DoxyParamCaption})}
+
+
+
+Checks if a message is correctly encrypted and decrypted. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em en\+\_\+result} & The encrypted message. \\
+\hline
+{\em de\+\_\+result} & The decrypted message. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true If the encrypted message, when decrypted, matches the original message. 
+
+false Otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_vigenere_a56fc304a543d347924432c61bc9780a1}\label{class_vigenere_a56fc304a543d347924432c61bc9780a1} 
+\index{Vigenere@{Vigenere}!setKey@{setKey}}
+\index{setKey@{setKey}!Vigenere@{Vigenere}}
+\doxysubsubsection{\texorpdfstring{setKey()}{setKey()}}
+{\footnotesize\ttfamily void Vigenere\+::set\+Key (\begin{DoxyParamCaption}\item[{std\+::string}]{key }\end{DoxyParamCaption})}
+
+
+
+Sets a new encryption key for the Vigenère cipher. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The new encryption key as a string, assumed to be uppercase. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+vigenere.\+h\item 
+vigenere.\+cpp\end{DoxyCompactItemize}
